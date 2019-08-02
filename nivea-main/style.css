@@ -1,0 +1,273 @@
+body{
+    /*font-size: 20px;*/
+    font-family: Raleway !important;
+    font-weight: 300;
+    margin: 0px;
+}
+
+#container{
+    margin : 0px auto;
+    background-color: white;
+    height: 100vh;
+    width : 100%;
+/*    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;*/
+    position: relative;
+}
+#start{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:300px;
+    top:50px;
+    color : lightgrey;
+}
+#start:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+.quiz-body {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.col-side, .col-main {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.col-side {
+    width: 33.333%;
+    text-align: center;
+}
+
+.col-side img {
+    width: 45%;
+    vertical-align: middle;
+    margin-top: 20%;
+}
+
+.col-main {
+    width: 66.666%;
+    background: #1e2a80;
+    color: #ffffff;
+    font-size: 6em;
+}
+
+.col-main div#question,
+.col-main div#choices,
+.col-main div#progress   {
+    width: 98% !important;
+    display: block;
+    padding: 20px;
+}
+
+#qImg{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#question{
+    /*width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;*/
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-weight: 600;
+    min-height: 240px;
+}
+
+#choices{
+    /*width : 100%;*/
+    /*position: absolute;
+    right : 0;
+    top : 125px;*/
+    padding : 10px;
+    margin: 0px;
+    margin-left: 50px;
+    list-style-type: decimal;
+}
+.choice{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    /*border : 1px solid grey;*/
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    padding : 5px;
+    list-style-type: decimal;
+}
+.choice:hover{
+    /*border : 2px solid grey;*/
+    font-weight: bold;
+}
+
+.choice span {
+    font-size: 50%;
+    font-weight: 700;
+    background: #ffffff;
+    color: #1e2a80;
+    border-radius: 50%;
+    padding: 0px 17px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 13px;
+    line-height: 1;
+}
+
+#timer{
+    position: absolute;
+    /*height : 100px;*/
+    width : 200px;
+    bottom : 15px;
+    text-align: center;
+}
+#counter{
+    font-size: 5em;
+}
+
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    /*width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;*/
+    padding: 5px;
+    text-align: right;
+    font-size: 1em;
+    position: relative;
+    bottom: 70px;
+}
+.prog{
+    /*width : 25px;
+    height : 25px;*/
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 35px;
+}
+
+.addAns {
+    background: #ffffff !important;
+    color: #1e2a80;
+}
+
+#scoreContainer{
+    /*margin : 20px auto;*/
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    /*border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;*/
+    display: none;    
+}
+#scoreContainer img{
+    position: absolute;
+    top:100px;
+    left:325px;
+}
+#scoreContainer p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media screen and (max-height: 300px) {
+
+    .col-main div#question, .col-main div#choices, .col-main div#progress {
+        padding: 5px;
+    }
+
+    .col-main {
+        font-size: 1.5em;
+    }
+
+    #question p {
+        min-height: 30px;
+    }
+
+    .choice span {
+        font-size: 60%;
+        padding: 0px 5px;
+        bottom: 5px;
+    }
+
+    .prog {
+        margin-left: 0;
+        margin-right: 3px;
+        padding: 10px 17px;
+    }
+
+    #counter {
+        font-size: 2.5em;
+    }
+
+    #btimeGauge, #timeGauge {
+        /*width: 100px !important;
+        height: 7px !important;*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
