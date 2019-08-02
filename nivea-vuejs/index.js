@@ -83,8 +83,10 @@ new Vue({
       } else {
         this.rangeVal = 0;
         this.timeCount = 15;
-        this.setCounter();
-        this.anotherQuestion();
+        if (this.questionIndex < this.questions.length - 1) {
+          this.setCounter();
+          this.anotherQuestion();
+        }
       }
     },
     checkAnswer: function(validAns) {
@@ -104,11 +106,11 @@ new Vue({
       //   }, 5000);
     },
     anotherQuestion: function() {
-      var count = this.questionIndex + 1;
-      console.log(this.questions[count].answer);
-      this.questionText = this.questions[count].question;
-      this.options = this.questions[count].choices;
-      this.correctAns = this.questions[count].answer;
+      this.questionIndex++;
+      console.log(this.questionIndex);
+      this.questionText = this.questions[this.questionIndex].question;
+      this.options = this.questions[this.questionIndex].choices;
+      this.correctAns = this.questions[this.questionIndex].answer;
     }
   }
 });
