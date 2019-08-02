@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
+
 <body onload="startQuiz()">
     <div id="container">
-        <div id="start" style="border: none;"><!-- Start Quiz! --></div>
+        <div id="start" style="border: none;">
+            <!-- Start Quiz! -->
+        </div>
         <div id="quiz" class="quiz-body" style="display: none;">
-            
+
             <div class="col-side">
                 <img src="images/nivea-logo.png" />
                 <div id="qImg" style="display: none;"></div>
@@ -23,7 +27,7 @@
 
             <div class="col-main">
                 <div id="question"></div>
-            
+
                 <ul id="choices">
                     <li class="choice" id="A" onclick="checkAnswer('A')"></li>
                     <li class="choice" id="B" onclick="checkAnswer('B')"></li>
@@ -32,12 +36,15 @@
                 </ul>
                 <div id="progress"></div>
             </div>
-            
+
         </div>
         <div id="scoreContainer" style="display: none">
             <!-- <div id="progress"></div> -->
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="quiz.js"></script>
 </body>
+
 </html>
