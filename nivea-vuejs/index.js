@@ -26,8 +26,33 @@ new Vue({
         choices: [
           { letter: 'A', choice: 'Oilb' },
           { letter: 'B', choice: 'Formulac' },
-          { letter: 'C', choice: 'Water3' },
-          { letter: 'D', choice: 'Syck 1' }
+          { letter: 'C', choice: 'Water3' }
+        ],
+        answer: 'B'
+      },
+      {
+        question: '3. Nivea deodorant can last for how long',
+        choices: [
+          { letter: 'A', choice: '2hours' },
+          { letter: 'B', choice: '10hours' },
+          { letter: 'C', choice: '48hours' }
+        ],
+        answer: 'C'
+      },
+      {
+        question: '4. Nivea products are for only women',
+        choices: [
+          { letter: 'A', choice: 'True' },
+          { letter: 'B', choice: 'False' }
+        ],
+        answer: 'B'
+      },
+      {
+        question:
+          '5. Does the Nivea Black / White deodorant stain your sheet with you use it?',
+        choices: [
+          { letter: 'A', choice: 'Yes' },
+          { letter: 'B', choice: 'No' }
         ],
         answer: 'B'
       }
@@ -56,6 +81,9 @@ new Vue({
           this.setCounter();
         }, 1000);
       } else {
+        this.rangeVal = 0;
+        this.timeCount = 15;
+        this.setCounter();
         this.anotherQuestion();
       }
     },
