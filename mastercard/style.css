@@ -50,20 +50,19 @@ body {
 }
 
 .col-side {
-    width: 20.333%;
+    width: 57.333%;
     text-align: center;
 }
 
 .col-side img {
-    width: 65%;
-    vertical-align: middle;
-    margin-top: 62%;
+    width: 20%;
+    margin-top: 7%;
 }
 
 .col-main {
     padding-top: 9%;
-    width: 79.667%;
-    background: #1e2a80;
+    width: 42.667%;
+    background: #ed0006;
     color: #ffffff;
     font-size: 6em;
 }
@@ -115,8 +114,8 @@ body {
     right : 0;
     top : 125px;*/
     vertical-align: middle;
-    display: inline-block;
-    width: 37%;
+    /* display: inline-block; */
+    /* width: 37%; */
     padding: 10px;
     margin: 0px;
     margin-left: 50px;
@@ -126,6 +125,8 @@ body {
 .choice {
     display: inline-block;
     width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 16px;
     text-align: left;
     /*border : 1px solid grey;*/
     /*border-radius: 5px;*/
@@ -165,6 +166,7 @@ body {
 }
 
 #counter {
+    color: white;
     font-size: 5em;
     font-weight: bold;
     margin: 14px;
@@ -217,7 +219,7 @@ body {
 
 .addAns {
     background: #ffffff !important;
-    color: #1e2a80;
+    color: #ed0006;
 }
 
 #scoreContainer {
@@ -257,6 +259,21 @@ body {
     display: inline-block;
     width: auto;
     font-weight: bold;
+}
+
+.leftQside {
+    text-align: left;
+    padding: 0px 10%;
+    height: 100vh;
+    background: black;
+}
+
+.leftQ {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 11%;
+    line-height: 120%;
 }
 
 

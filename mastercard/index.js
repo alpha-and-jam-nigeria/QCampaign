@@ -11,47 +11,48 @@ new Vue({
     correctAns: '',
     questions: [
       {
-        question: '1. Nivea natural fairness is for which skin type?',
+        question: '1. Mastercard expiration date usually consist of…',
         choices: [
-          { letter: 'A', choice: 'Dark skin' },
-          { letter: 'B', choice: 'Light skin' },
-          { letter: 'C', choice: 'All skin types' }
+          { letter: 'A', choice: 'Month and year only' },
+          { letter: 'B', choice: 'Date and month only' },
+          { letter: 'C', choice: 'Year only' }
+        ],
+        answer: 'A'
+      },
+      {
+        question: '2. What are the two primary colours in master card logo?',
+        choices: [
+          { letter: 'A', choice: 'Red and orange' },
+          { letter: 'B', choice: 'Red and yellow' },
+          { letter: 'C', choice: 'Yellow and orange' }
+        ],
+        answer: 'B'
+      },
+      {
+        question:
+          '3. Can you use your Mastercard whenever you travel out of the country anywhere in the world?',
+        choices: [
+          { letter: 'A', choice: 'Yes' },
+          { letter: 'B', choice: 'No' }
         ],
         answer: 'A'
       },
       {
         question:
-          '2. What is the main difference between Nivea crème and Nivea soft?',
-        choices: [
-          { letter: 'A', choice: 'Oil' },
-          { letter: 'B', choice: 'Formula' },
-          { letter: 'C', choice: 'Water' }
-        ],
-        answer: 'B'
-      },
-      {
-        question: '3. Nivea deodorant can last for how long',
-        choices: [
-          { letter: 'A', choice: '2hours' },
-          { letter: 'B', choice: '10hours' },
-          { letter: 'C', choice: '48hours' }
-        ],
-        answer: 'C'
-      },
-      {
-        question: '4. Nivea products are for only women',
-        choices: [
-          { letter: 'A', choice: 'True' },
-          { letter: 'B', choice: 'False' }
-        ],
-        answer: 'B'
-      },
-      {
-        question:
-          '5. Does the Nivea Black / White deodorant stain your sheet with you use it?',
+          '4. Do you earn a loyalty point each time you pay with your master card?',
         choices: [
           { letter: 'A', choice: 'Yes' },
           { letter: 'B', choice: 'No' }
+        ],
+        answer: 'B'
+      },
+      {
+        question: '5. The Mastercard comes in which of these',
+        choices: [
+          { letter: 'A', choice: 'Savings' },
+          { letter: 'B', choice: 'Credit' },
+          { letter: 'C', choice: 'All' },
+          { letter: 'D', choice: 'None' }
         ],
         answer: 'B'
       }

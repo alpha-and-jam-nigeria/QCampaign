@@ -50,20 +50,19 @@ body {
 }
 
 .col-side {
-    width: 20.333%;
+    width: 57.333%;
     text-align: center;
 }
 
 .col-side img {
-    width: 65%;
-    vertical-align: middle;
-    margin-top: 62%;
+    width: 43%;
+    margin-top: 7%;
 }
 
 .col-main {
     padding-top: 9%;
-    width: 79.667%;
-    background: #1e2a80;
+    width: 42.667%;
+    background: #00529c;
     color: #ffffff;
     font-size: 6em;
 }
@@ -115,8 +114,8 @@ body {
     right : 0;
     top : 125px;*/
     vertical-align: middle;
-    display: inline-block;
-    width: 37%;
+    /* display: inline-block; */
+    /* width: 37%; */
     padding: 10px;
     margin: 0px;
     margin-left: 50px;
@@ -217,7 +216,7 @@ body {
 
 .addAns {
     background: #ffffff !important;
-    color: #1e2a80;
+    color: #00529c;
 }
 
 #scoreContainer {
@@ -257,6 +256,20 @@ body {
     display: inline-block;
     width: auto;
     font-weight: bold;
+}
+
+.leftQside {
+    text-align: left;
+    padding: 0px 10%;
+    height: 100vh;
+}
+
+.leftQ {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #00529c;
+    margin-top: 11%;
+    line-height: 120%;
 }
 
 

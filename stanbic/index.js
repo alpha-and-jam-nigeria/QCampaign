@@ -11,35 +11,18 @@ new Vue({
     correctAns: '',
     questions: [
       {
-        question: '1. Nivea natural fairness is for which skin type?',
+        question:
+          '1. What’s the short code for transferring funds with Stanbic IBTC',
         choices: [
-          { letter: 'A', choice: 'Dark skin' },
-          { letter: 'B', choice: 'Light skin' },
-          { letter: 'C', choice: 'All skin types' }
+          { letter: 'A', choice: '*919#' },
+          { letter: 'B', choice: '*909#' },
+          { letter: 'C', choice: '*966#' }
         ],
         answer: 'A'
       },
       {
         question:
-          '2. What is the main difference between Nivea crème and Nivea soft?',
-        choices: [
-          { letter: 'A', choice: 'Oil' },
-          { letter: 'B', choice: 'Formula' },
-          { letter: 'C', choice: 'Water' }
-        ],
-        answer: 'B'
-      },
-      {
-        question: '3. Nivea deodorant can last for how long',
-        choices: [
-          { letter: 'A', choice: '2hours' },
-          { letter: 'B', choice: '10hours' },
-          { letter: 'C', choice: '48hours' }
-        ],
-        answer: 'C'
-      },
-      {
-        question: '4. Nivea products are for only women',
+          '2. You can use the same login details on your internet banking for your mobile apps?',
         choices: [
           { letter: 'A', choice: 'True' },
           { letter: 'B', choice: 'False' }
@@ -47,11 +30,29 @@ new Vue({
         answer: 'B'
       },
       {
-        question:
-          '5. Does the Nivea Black / White deodorant stain your sheet with you use it?',
+        question: '3.  Stanbic IBTC supports SME',
         choices: [
           { letter: 'A', choice: 'Yes' },
           { letter: 'B', choice: 'No' }
+        ],
+        answer: 'A'
+      },
+      {
+        question: '4. Which of these things can you do with your *909#',
+        choices: [
+          { letter: 'A', choice: 'Bill Payment' },
+          { letter: 'B', choice: 'Airtime purchase' },
+          { letter: 'C', choice: 'Money Transfer' }
+        ],
+        answer: 'B'
+      },
+      {
+        question: '5. *909# CAN not be used in which of these states',
+        choices: [
+          { letter: 'A', choice: 'Lagos' },
+          { letter: 'B', choice: 'Abuja' },
+          { letter: 'C', choice: 'Port-Harcourt' },
+          { letter: 'D', choice: 'None' }
         ],
         answer: 'B'
       }

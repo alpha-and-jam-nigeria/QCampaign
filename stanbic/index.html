@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div id="container">
+            <div id="start" style="border: none;">
+                <!-- Start Quiz! -->
+            </div>
+            <div id="quiz" class="quiz-body">
+
+                <div class="col-side">
+                    <div class="leftQside">
+                        <img src="images/stanbic-ibtc-bank.png" />
+                        <div id="question" class="leftQ">{{ questionText }}</div>
+                    </div>
+
+
+                    <div id="qImg" style="display: none;"></div>
+                    <div id="timer">
+                        <div id="counter">{{timeCount}}</div>
+                        <div id="btimeGauge"></div>
+                        <div id="timeGauge" :style="{ 'width': rangeIncr }"></div>
+                    </div>
+                </div>
+
+                <div class="col-main">
+                    <ul id="choices">
+                        <li v-for="option in options"
+                            :class="[' choice', { 'correct' : option.letter==checkAnswer(option.letter)}]"
+                            :id="option.letter">
+                            <span>{{option.letter}}</span>{{option.choice}}
+                        </li>
+                    </ul>
+                    <div id="progress"></div>
+                </div>
+
+            </div>
+            <div id="scoreContainer" style="display: none">
+                <!-- <div id="progress"></div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"
+    integrity="sha256-chlNFSVx3TdcQ2Xlw7SvnbLAavAQLO0Y/LBiWX04viY=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
