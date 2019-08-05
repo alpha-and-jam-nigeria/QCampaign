@@ -1,0 +1,32 @@
+@media screen and (max-width: 1440px) {
+    .col-side img {
+        width: 15%;
+        margin-top: 5%;
+    }
+
+    .leftQ {
+        font-size: 2.4em;
+        font-weight: bold;
+        color: white;
+        margin-top: 11%;
+        line-height: 120%;
+    }
+
+    #counter {
+        font-size: 2em;
+    }
+
+    .choice {
+        font-size: 0.4em;
+        margin-bottom: 0px;
+    }
+
+    .choice span {
+        font-size: smaller;
+        bottom: 0;
+    }
+
+    .col-main {
+        padding-top: 5%;
+    }
+}

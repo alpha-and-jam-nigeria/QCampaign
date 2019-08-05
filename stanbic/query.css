@@ -1,0 +1,25 @@
+@media screen and (max-width: 1440px) {
+    .leftQ {
+        font-size: 1.9em;
+    }
+
+    .col-side img {
+        width: 34%;
+    }
+
+    #counter {
+        font-size: 3em;
+    }
+
+    .col-main {
+        padding-top: 4%;
+    }
+
+    .choice {
+        font-size: 0.4em;
+    }
+
+    .choice span {
+        font-size: smaller;
+    }
+}

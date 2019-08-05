@@ -1,0 +1,33 @@
+@media screen and (max-width: 1440px) {
+    .col-side img {
+        width: 40%;
+        margin-top: 40%;
+    }
+
+    #counter {
+        font-size: 3em
+    }
+
+    .col-main div#question,
+    .col-main div#choices,
+    .col-main div#progress {
+        font-size: 0.4em;
+    }
+
+    .col-main {
+        padding-top: 3%;
+    }
+
+    .col-main div#question {
+        width: 44% !important;
+    }
+
+    .choice {
+        font-size: 0.4em;
+    }
+
+    .choice span {
+        font-size: smaller
+    }
+
+}
