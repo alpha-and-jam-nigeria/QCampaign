@@ -19,7 +19,12 @@
             <div id="quiz" class="quiz-body">
 
                 <div class="col-side">
-                    <img src="images/nivea-logo.png" />
+                    <div class="leftQside">
+                        <img src="images/renmoney.png" />
+                        <div id="question" class="leftQ">{{ questionText }}</div>
+                    </div>
+
+
                     <div id="qImg" style="display: none;"></div>
                     <div id="timer">
                         <div id="counter">{{timeCount}}</div>
@@ -29,8 +34,6 @@
                 </div>
 
                 <div class="col-main">
-                    <div id="question">{{ questionText }}</div>
-
                     <!-- <ul id="choices">
                         <li v-for="option in options"
                             :class="[' choice', { 'correct' : option.letter==checkAnswer(option.letter)}]"
@@ -44,7 +47,6 @@
                             <span>{{option.letter}}</span>{{option.choice}}
                         </li>
                     </ul>
-
                     <div id="progress"></div>
                 </div>
 

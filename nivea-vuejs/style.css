@@ -5,6 +5,14 @@ body {
     margin: 0px;
 }
 
+.overlayy {
+    height: 100vh;
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    background: #00000094;
+}
+
 #container {
     margin: 0px auto;
     background-color: white;

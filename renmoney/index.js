@@ -12,49 +12,31 @@ new Vue({
     correctAns: '',
     questions: [
       {
-        question: '1. Nivea natural fairness is for which skin type?',
+        question: '1. Renmoney can give you a loan of up to ...',
         choices: [
-          { letter: 'A', choice: 'Dark skin' },
-          { letter: 'B', choice: 'Light skin' },
-          { letter: 'C', choice: 'All skin types' }
-        ],
-        answer: 'C'
-      },
-      {
-        question:
-          '2. What is the main difference between Nivea crème and Nivea soft?',
-        choices: [
-          { letter: 'A', choice: 'Oil' },
-          { letter: 'B', choice: 'Formula' },
-          { letter: 'C', choice: 'Water' }
-        ],
-        answer: 'B'
-      },
-      {
-        question: '3. Nivea deodorant can last for how long',
-        choices: [
-          { letter: 'A', choice: '2hours' },
-          { letter: 'B', choice: '10hours' },
-          { letter: 'C', choice: '48hours' }
-        ],
-        answer: 'C'
-      },
-      {
-        question: '4. Nivea products are for only women',
-        choices: [
-          { letter: 'A', choice: 'True' },
-          { letter: 'B', choice: 'False' }
+          { letter: 'A', choice: '250,000' },
+          { letter: 'B', choice: '4,000,000' },
+          { letter: 'C', choice: '1,000,000' }
         ],
         answer: 'B'
       },
       {
         question:
-          '5. Does the Nivea Black / White deodorant stain your sheet with you use it?',
+          '2. Do you need a Landed Property to obtain a loan from Renmoney',
         choices: [
           { letter: 'A', choice: 'Yes' },
           { letter: 'B', choice: 'No' }
         ],
         answer: 'B'
+      },
+      {
+        question: '3.  How long does it take to obtain a loan from Renmoney',
+        choices: [
+          { letter: 'A', choice: '2 Months' },
+          { letter: 'B', choice: '16 Days' },
+          { letter: 'C', choice: '24 Hours' }
+        ],
+        answer: 'C'
       }
     ]
   },
@@ -100,14 +82,14 @@ new Vue({
       } else {
       }
 
-      // Answer not working with SetTimeout Yet
-      // setTimeout(() => {
-      //   if (validAns == this.correctAns) {
-      //     console.log(validAns);
-      //     return this.correctAns;
-      //   } else {
-      //   }
-      // }, 5000);
+      //   Answer not working with SetTimeout Yet
+      //   setTimeout(() => {
+      //     if (validAns == this.correctAns) {
+      //       console.log(validAns);
+      //       return this.correctAns;
+      //     } else {
+      //     }
+      //   }, 5000);
     },
     anotherQuestion: function() {
       this.questionIndex++;

@@ -63,14 +63,14 @@ body {
 }
 
 .col-side img {
-    width: 20%;
+    width: 43%;
     margin-top: 7%;
 }
 
 .col-main {
-    padding-top: 9%;
+    padding-top: 6%;
     width: 42.667%;
-    background: #ed0006;
+    background: #005e81;
     color: #ffffff;
     font-size: 6em;
 }
@@ -133,8 +133,6 @@ body {
 .choice {
     display: inline-block;
     width: 100%;
-    font-size: 0.8em;
-    margin-bottom: 16px;
     text-align: left;
     /*border : 1px solid grey;*/
     /*border-radius: 5px;*/
@@ -174,7 +172,6 @@ body {
 }
 
 #counter {
-    color: white;
     font-size: 5em;
     font-weight: bold;
     margin: 14px;
@@ -227,7 +224,7 @@ body {
 
 .addAns {
     background: #ffffff !important;
-    color: #ed0006;
+    color: #005e81;
 }
 
 #scoreContainer {
@@ -277,6 +274,7 @@ body {
     /* animation-duration: 5s; */
 }
 
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     from {
@@ -307,17 +305,15 @@ body {
     text-align: left;
     padding: 0px 10%;
     height: 100vh;
-    background: black;
 }
 
 .leftQ {
     font-size: 4.5em;
     font-weight: bold;
-    color: white;
+    color: #005e81;
     margin-top: 11%;
     line-height: 120%;
 }
-
 
 .newOption {
     list-style: none;
@@ -340,7 +336,6 @@ body {
     color: white;
     font-weight: bold;
 }
-
 
 
 @media screen and (max-height: 300px) {

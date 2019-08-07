@@ -4,6 +4,7 @@ new Vue({
     message: 'Hello World',
     questionText: '',
     options: [],
+    finished: false,
     questionIndex: 0,
     timeCount: 15, //15 sec
     rangeVal: 0,
@@ -89,6 +90,8 @@ new Vue({
             this.setCounter();
             this.anotherQuestion();
           }, 5000);
+        } else {
+          this.finished = true;
         }
       }
     },
