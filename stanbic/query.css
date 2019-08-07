@@ -22,4 +22,18 @@
     .choice span {
         font-size: smaller;
     }
+
+
+    /* New Option */
+    .newOption {
+        list-style: none;
+        font-size: 0.4em;
+    }
+
+    .newOption li span {
+        background: #ffffff52;
+        height: 50px;
+        display: inline-block;
+        width: 50px;
+    }
 }

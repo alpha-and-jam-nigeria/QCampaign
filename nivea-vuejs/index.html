@@ -30,13 +30,20 @@
                 <div class="col-main">
                     <div id="question">{{ questionText }}</div>
 
-                    <ul id="choices">
+                    <!-- <ul id="choices">
                         <li v-for="option in options"
                             :class="[' choice', { 'correct' : option.letter==checkAnswer(option.letter)}]"
                             :id="option.letter">
                             <span>{{option.letter}}</span>{{option.choice}}
                         </li>
+                    </ul> -->
+                    <ul class="newOption">
+                        <li v-for="option in options"
+                            :class="['', { 'correct' : option.letter==checkAnswer(option.letter)}]" :id="option.letter">
+                            <span>{{option.letter}}</span>{{option.choice}}
+                        </li>
                     </ul>
+
                     <div id="progress"></div>
                 </div>
 

@@ -44,7 +44,7 @@ new Vue({
           { letter: 'A', choice: 'Yes' },
           { letter: 'B', choice: 'No' }
         ],
-        answer: 'B'
+        answer: 'A'
       },
       {
         question: '5. The Mastercard comes in which of these',
@@ -54,7 +54,7 @@ new Vue({
           { letter: 'C', choice: 'All' },
           { letter: 'D', choice: 'None' }
         ],
-        answer: 'B'
+        answer: 'C'
       }
     ]
   },
@@ -84,8 +84,10 @@ new Vue({
         this.rangeVal = 0;
         this.timeCount = 15;
         if (this.questionIndex < this.questions.length - 1) {
-          this.setCounter();
-          this.anotherQuestion();
+          setTimeout(() => {
+            this.setCounter();
+            this.anotherQuestion();
+          }, 5000);
         }
       }
     },

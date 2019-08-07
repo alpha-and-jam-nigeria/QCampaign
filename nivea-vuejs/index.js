@@ -17,7 +17,7 @@ new Vue({
           { letter: 'B', choice: 'Light skin' },
           { letter: 'C', choice: 'All skin types' }
         ],
-        answer: 'A'
+        answer: 'C'
       },
       {
         question:
@@ -83,8 +83,10 @@ new Vue({
         this.rangeVal = 0;
         this.timeCount = 15;
         if (this.questionIndex < this.questions.length - 1) {
-          this.setCounter();
-          this.anotherQuestion();
+          setTimeout(() => {
+            this.setCounter();
+            this.anotherQuestion();
+          }, 5000);
         }
       }
     },
@@ -95,14 +97,14 @@ new Vue({
       } else {
       }
 
-      //   Answer not working with SetTimeout Yet
-      //   setTimeout(() => {
-      //     if (validAns == this.correctAns) {
-      //       console.log(validAns);
-      //       return this.correctAns;
-      //     } else {
-      //     }
-      //   }, 5000);
+      // Answer not working with SetTimeout Yet
+      // setTimeout(() => {
+      //   if (validAns == this.correctAns) {
+      //     console.log(validAns);
+      //     return this.correctAns;
+      //   } else {
+      //   }
+      // }, 5000);
     },
     anotherQuestion: function() {
       this.questionIndex++;

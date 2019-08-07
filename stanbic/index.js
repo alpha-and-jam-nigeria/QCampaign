@@ -18,7 +18,7 @@ new Vue({
           { letter: 'B', choice: '*909#' },
           { letter: 'C', choice: '*966#' }
         ],
-        answer: 'A'
+        answer: 'B'
       },
       {
         question:
@@ -27,7 +27,7 @@ new Vue({
           { letter: 'A', choice: 'True' },
           { letter: 'B', choice: 'False' }
         ],
-        answer: 'B'
+        answer: 'A'
       },
       {
         question: '3.  Stanbic IBTC supports SME',
@@ -42,9 +42,10 @@ new Vue({
         choices: [
           { letter: 'A', choice: 'Bill Payment' },
           { letter: 'B', choice: 'Airtime purchase' },
-          { letter: 'C', choice: 'Money Transfer' }
+          { letter: 'C', choice: 'Money Transfer' },
+          { letter: 'D', choice: 'All' }
         ],
-        answer: 'B'
+        answer: 'D'
       },
       {
         question: '5. *909# CAN not be used in which of these states',
@@ -54,7 +55,7 @@ new Vue({
           { letter: 'C', choice: 'Port-Harcourt' },
           { letter: 'D', choice: 'None' }
         ],
-        answer: 'B'
+        answer: 'D'
       }
     ]
   },
@@ -84,8 +85,10 @@ new Vue({
         this.rangeVal = 0;
         this.timeCount = 15;
         if (this.questionIndex < this.questions.length - 1) {
-          this.setCounter();
-          this.anotherQuestion();
+          setTimeout(() => {
+            this.setCounter();
+            this.anotherQuestion();
+          }, 5000);
         }
       }
     },

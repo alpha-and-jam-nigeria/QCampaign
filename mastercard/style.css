@@ -254,11 +254,45 @@ body {
     text-align: center;
 }
 
-#choices .correct {
-    border-bottom: 7px solid white;
+.correct {
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
     display: inline-block;
     width: auto;
-    font-weight: bold;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-delay: 15s;
+    /* animation-duration: 5s; */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {
+        border-bottom-color: transparent;
+        font-weight: normal;
+    }
+
+    to {
+        border-bottom-color: white;
+        font-weight: bold;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {
+        border-bottom-color: transparent;
+        font-weight: normal;
+    }
+
+    to {
+        border-bottom-color: white;
+        font-weight: bold;
+    }
 }
 
 .leftQside {
@@ -275,6 +309,30 @@ body {
     margin-top: 11%;
     line-height: 120%;
 }
+
+
+.newOption {
+    list-style: none;
+    font-size: 0.7em;
+}
+
+.newOption li {
+    margin-bottom: 26px;
+
+}
+
+.newOption li span {
+    background: #ffffff52;
+    height: 100px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 32px;
+    border-radius: 58px;
+    color: white;
+    font-weight: bold;
+}
+
 
 
 @media screen and (max-height: 300px) {
